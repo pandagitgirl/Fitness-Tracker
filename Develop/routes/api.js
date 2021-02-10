@@ -14,8 +14,9 @@ router.post("/api/workouts", ({ body }, res) => {
 router.get("/exercise", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/exercise.html"));
   });
-  router.put("/api/workouts/:exerciseid", (req, res) => {
-    workoutid = req.params.excerciseid; )
+
+// router.put("/api/workouts/:exerciseid", (req, res) => {
+//     workoutid = req.params.excerciseid
  
 
 router.get("/api/workouts", (req, res) => {
