@@ -15,9 +15,12 @@ router.get("/exercise", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/exercise.html"));
   });
 
-// router.put("/api/workouts/:exerciseid", (req, res) => {
-//     workoutid = req.params.excerciseid
- 
+router.put("/api/workouts/:exerciseid", (req, res) => {
+    workoutid = req.params.excerciseid // the id work
+    // search the database based off of the workoutid
+    // Workout the method findByIdAndUpdate with body
+    // return the result of that 
+})
 
 router.get("/api/workouts", (req, res) => {
   Workout.find({})
